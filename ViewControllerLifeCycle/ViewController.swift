@@ -9,17 +9,55 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        print(__FUNCTION__)
+    }
+    
+    override func loadView() {
+        super.loadView()
+        print(__FUNCTION__)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print(__FUNCTION__)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print(__FUNCTION__)
     }
-
-
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        print(__FUNCTION__)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        print(__FUNCTION__)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        print(__FUNCTION__)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        print(__FUNCTION__)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        print(__FUNCTION__)
+    }
+    
+    deinit {
+        print(__FUNCTION__)
+    }
+    
 }
 
