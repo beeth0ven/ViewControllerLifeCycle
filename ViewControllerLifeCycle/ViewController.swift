@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         print(__FUNCTION__)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print(__FUNCTION__) // Load Container
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(__FUNCTION__)
@@ -58,6 +62,8 @@ class ViewController: UIViewController {
     deinit {
         print(__FUNCTION__)
     }
+    
+
     
 }
 
